@@ -1,3 +1,6 @@
+
+<?php 
+
 $conn = new mysqli("mysql", "root", ".sweetpwd.", "my_db");
 // Check connection
 if ($conn->connect_error) {
@@ -16,3 +19,5 @@ if ($result->num_rows > 0) {
 	echo "0 results";
 }
 $conn->close();
+
+?>
