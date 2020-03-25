@@ -18,7 +18,9 @@ services:
         container_name: php72
         build:
             context: ./
+        volumes:
+            - G:/Documents/Projects/GIT/repo/HelloWorld-PHP-MSQL-Containerize/src:/var/www/html/
         ports:
-                - 3001:80
+            - 3001:80
         depends_on:
-                - mysql
+            - mysql
