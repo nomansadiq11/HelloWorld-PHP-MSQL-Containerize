@@ -7,4 +7,6 @@ In the example I have used
 - PHP
 - MYSQL 
 
-these two will be in two different containers and docker-compose file having configuration how they will communicate. 
+Note:
+    These two will be in two different containers and docker-compose file having configuration how they will communicate. Once you start up containers its fetch the latest images and run the container. 
+    In the docker-compose file there is mentioned website depends on database means it first create database container than will create website container. 
